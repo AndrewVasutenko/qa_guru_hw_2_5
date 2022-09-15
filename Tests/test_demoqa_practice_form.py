@@ -23,7 +23,7 @@ def test_demoqa_practice_form():
     browser.element('[aria-label="Choose Monday, April 19th, 1993"]').click()
     browser.element('#subjectsInput').type('Arts').press_enter().type('Commerce').press_enter()
     browser.element('[for="hobbies-checkbox-1"]').click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath('./Images/meme.jpg'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('../Images/meme.jpg'))
     browser.element('#currentAddress').type(current_address)
     browser.element('#react-select-3-input').type('rajasthan').press_enter()
     browser.element('#react-select-4-input').type('jaipur').press_enter()
